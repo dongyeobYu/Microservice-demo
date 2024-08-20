@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71295c2-158f-4f9e-8878-b9a875b6fdac" name="Changes" comment="" />
+    <list default="true" id="c71295c2-158f-4f9e-8878-b9a875b6fdac" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discoveryservice/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discoveryservice/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discoveryservice/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discoveryservice/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discoveryservice/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discoveryservice/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discoveryservice/src/main/java/com/example/discoveryservice/DiscoveryserviceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discoveryservice/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discoveryservice/src/test/java/com/example/discoveryservice/DiscoveryserviceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/UserServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/com/example/userservice/UserServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/discoveryservice/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +62,7 @@
     </system>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/discoveryservice" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -47,7 +72,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/dongyeobYu/discoveryservice.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/dongyeobYu/Microservice-demo.git&quot;,
     &quot;accountId&quot;: &quot;e66b83bf-2ecc-4eab-b37e-9de6e46a42ca&quot;
   }
 }</component>
@@ -55,6 +80,7 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2kttRr3L4pABrwaJEuKAw3KoTuA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,15 +95,16 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/discoveryservice",
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/Microservice-demo/user-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -94,19 +121,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.UserServiceApplication">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="user-service" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="user-service" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DiscoveryserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="discoveryservice.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.discoveryservice.DiscoveryserviceApplication" />
@@ -141,11 +155,19 @@
       <workItem from="1724114696910" duration="168000" />
       <workItem from="1724114893812" duration="72000" />
       <workItem from="1724114969173" duration="27000" />
-      <workItem from="1724115024582" duration="336000" />
+      <workItem from="1724115024582" duration="794000" />
+      <workItem from="1724127157999" duration="274000" />
+      <workItem from="1724127445166" duration="110000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/discoveryservice" />
+      <path value="$PROJECT_DIR$/user-service" />
+    </ignored-roots>
   </component>
 </project>
