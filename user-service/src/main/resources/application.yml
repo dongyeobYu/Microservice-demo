@@ -1,11 +1,13 @@
 server:
-  port: 9001
+  port: 0           # 랜덤 포트 실행
 
 spring:
   application:
     name: user-service
 
 eureka:
+  instance:
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.instance_id:${random.value}}  # 인스턴스 아이디 추가
   client:
     register-with-eureka: true
     fetch-registry: true
