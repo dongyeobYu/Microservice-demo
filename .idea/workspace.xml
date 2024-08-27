@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71295c2-158f-4f9e-8878-b9a875b6fdac" name="Changes" comment="spring cloud gateway + filterconfig 적용">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/gateway-service.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/gatewayservice/filter/CustomFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/gatewayservice/filter/GlobalFilter.java" afterDir="false" />
+    <list default="true" id="c71295c2-158f-4f9e-8878-b9a875b6fdac" name="Changes" comment="spring cloud custom + global filter 적용">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/first-service.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/second-service.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/gatewayservice/filter/LoggingFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/src/main/java/com/firstservice/controller/FirstController.java" beforeDir="false" afterPath="$PROJECT_DIR$/first-service/src/main/java/com/firstservice/controller/FirstController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discoveryservice/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/first-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/first-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second-service/src/main/java/com/secondservice/controller/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/second-service/src/main/java/com/secondservice/controller/SecondController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/second-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/second-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +62,12 @@
         <task path="$PROJECT_DIR$/gateway-service">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/first-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/second-service">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -68,12 +77,31 @@
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="discoveryservice" type="f1a62948:ProjectNode" />
+                <item name="first-service" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="first-service" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="discoveryservice" type="f1a62948:ProjectNode" />
+                <item name="first-service" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="second-service" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="second-service" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="second-service" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
@@ -124,9 +152,13 @@
     "Gradle.Build user-service.executor": "Run",
     "Gradle.discoveryservice [build].executor": "Run",
     "Gradle.discoveryservice [clean].executor": "Run",
+    "Gradle.first-service [build].executor": "Run",
+    "Gradle.first-service [clean].executor": "Run",
     "Gradle.gateway-service [buildDependents].executor": "Run",
     "Gradle.gateway-service [build].executor": "Run",
     "Gradle.gateway-service [clean].executor": "Run",
+    "Gradle.second-service [build].executor": "Run",
+    "Gradle.second-service [clean].executor": "Run",
     "Gradle.user-service [build].executor": "Run",
     "Gradle.user-service [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -179,7 +211,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayServiceApplication">
+  <component name="RunManager" selected="Gradle.second-service [build]">
     <configuration name="discoveryservice [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -202,10 +234,32 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="discoveryservice [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="first-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/discoveryservice" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/first-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="first-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/first-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -224,10 +278,10 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="gateway-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="second-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/gateway-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/second-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -246,32 +300,10 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="user-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="second-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="user-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/second-service" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -334,25 +366,25 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.first-service [build]" />
+      <item itemvalue="Gradle.first-service [clean]" />
+      <item itemvalue="Gradle.second-service [build]" />
+      <item itemvalue="Gradle.second-service [clean]" />
       <item itemvalue="Gradle.discoveryservice [build]" />
-      <item itemvalue="Gradle.discoveryservice [clean]" />
-      <item itemvalue="Gradle.gateway-service [build]" />
-      <item itemvalue="Gradle.user-service [build]" />
-      <item itemvalue="Gradle.user-service [clean]" />
-      <item itemvalue="Spring Boot.FirstServiceApplication" />
-      <item itemvalue="Spring Boot.SecondServiceApplication" />
-      <item itemvalue="Spring Boot.GatewayServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryserviceApplication" />
+      <item itemvalue="Spring Boot.SecondServiceApplication" />
+      <item itemvalue="Spring Boot.FirstServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayServiceApplication" />
       <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.UserServiceApplication (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.second-service [build]" />
+        <item itemvalue="Gradle.second-service [clean]" />
+        <item itemvalue="Gradle.first-service [build]" />
+        <item itemvalue="Gradle.first-service [clean]" />
         <item itemvalue="Gradle.discoveryservice [build]" />
-        <item itemvalue="Gradle.discoveryservice [clean]" />
-        <item itemvalue="Gradle.user-service [build]" />
-        <item itemvalue="Gradle.user-service [clean]" />
-        <item itemvalue="Gradle.gateway-service [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -380,7 +412,7 @@
       <workItem from="1724127445166" duration="110000" />
       <workItem from="1724148256549" duration="75000" />
       <workItem from="1724148335805" duration="121000" />
-      <workItem from="1724148461308" duration="17114000" />
+      <workItem from="1724148461308" duration="21159000" />
     </task>
     <task id="LOCAL-00001" summary="spring cloud gateway">
       <option name="closed" value="true" />
@@ -398,7 +430,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724417464539</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="spring cloud custom + global filter 적용">
+      <option name="closed" value="true" />
+      <created>1724590330787</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724590330787</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,6 +451,7 @@
     </ignored-roots>
     <MESSAGE value="spring cloud gateway" />
     <MESSAGE value="spring cloud gateway + filterconfig 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring cloud gateway + filterconfig 적용" />
+    <MESSAGE value="spring cloud custom + global filter 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring cloud custom + global filter 적용" />
   </component>
 </project>
