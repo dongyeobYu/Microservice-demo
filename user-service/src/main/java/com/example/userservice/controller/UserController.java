@@ -1,10 +1,11 @@
 package com.example.userservice.controller;
 
 import com.example.userservice.Greeting;
+import com.example.userservice.dto.RequestUser;
+import com.example.userservice.dto.UserDto;
+import com.example.userservice.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/")
@@ -13,8 +14,16 @@ public class UserController {
 
     private final Greeting greeting;
 
-    @GetMapping("/health_check")
+    private final UserService userService;
+
+    @GetMapping("health_check")
     public String status(){
         return greeting.getMessage();
+    }
+
+    @PostMapping("users")
+    public String createUser(@RequestBody RequestUser requestUser){
+        userService.save(requestUser);
+        return null;
     }
 }
