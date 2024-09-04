@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/users")
 @RequiredArgsConstructor
 public class UserController {
 
@@ -23,7 +23,7 @@ public class UserController {
         return greeting.getMessage();
     }
 
-    @PostMapping("users")
+    @PostMapping
     public ResponseEntity<ResponseUserDto> createUser(@RequestBody RequestUserDto requestUserDto){
         return ResponseEntity.status(HttpStatus.CREATED).body(userService.save(requestUserDto));
     }

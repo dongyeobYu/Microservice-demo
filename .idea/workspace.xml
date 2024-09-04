@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71295c2-158f-4f9e-8878-b9a875b6fdac" name="Changes" comment="user-serivce 생성 및 entity 생성">
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/dto/ResponseUserDto.java" afterDir="false" />
+    <list default="true" id="c71295c2-158f-4f9e-8878-b9a875b6fdac" name="Changes" comment="user-service JPA + ResponseEntity">
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/security/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/UserServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/dto/RequestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/dto/RequestUserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/dto/UserDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/entity/UserEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -388,7 +387,7 @@
       <workItem from="1724148256549" duration="75000" />
       <workItem from="1724148335805" duration="121000" />
       <workItem from="1724148461308" duration="24828000" />
-      <workItem from="1725185788189" duration="7916000" />
+      <workItem from="1725185788189" duration="9764000" />
     </task>
     <task id="LOCAL-00001" summary="spring cloud gateway">
       <option name="closed" value="true" />
@@ -438,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725366046731</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="user-service JPA + ResponseEntity">
+      <option name="closed" value="true" />
+      <created>1725448964276</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725448964276</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,6 +462,7 @@
     <MESSAGE value="load balancer 적용" />
     <MESSAGE value="user-serivce 생성 및 DB 연동" />
     <MESSAGE value="user-serivce 생성 및 entity 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="user-serivce 생성 및 entity 생성" />
+    <MESSAGE value="user-service JPA + ResponseEntity" />
+    <option name="LAST_COMMIT_MESSAGE" value="user-service JPA + ResponseEntity" />
   </component>
 </project>
