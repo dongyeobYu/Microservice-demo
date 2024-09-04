@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71295c2-158f-4f9e-8878-b9a875b6fdac" name="Changes" comment="load balancer 적용">
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/Greeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="c71295c2-158f-4f9e-8878-b9a875b6fdac" name="Changes" comment="user-serivce 생성 및 entity 생성">
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/dto/ResponseUserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/src/main/java/com/firstservice/controller/FirstController.java" beforeDir="false" afterPath="$PROJECT_DIR$/first-service/src/main/java/com/firstservice/controller/FirstController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/first-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/dto/RequestUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/dto/RequestUserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/dto/UserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/userservice/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +94,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -174,6 +172,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.userservice.dto" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/first-service/src/main/java/com/firstservice" />
     </key>
@@ -193,7 +194,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.user-service [build]">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="first-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -387,7 +388,7 @@
       <workItem from="1724148256549" duration="75000" />
       <workItem from="1724148335805" duration="121000" />
       <workItem from="1724148461308" duration="24828000" />
-      <workItem from="1725185788189" duration="920000" />
+      <workItem from="1725185788189" duration="7916000" />
     </task>
     <task id="LOCAL-00001" summary="spring cloud gateway">
       <option name="closed" value="true" />
@@ -421,7 +422,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724761192925</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="user-serivce 생성 및 DB 연동">
+      <option name="closed" value="true" />
+      <created>1725186735633</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725186735633</updated>
+    </task>
+    <task id="LOCAL-00006" summary="user-serivce 생성 및 entity 생성">
+      <option name="closed" value="true" />
+      <created>1725366046731</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725366046731</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,6 +453,8 @@
     <MESSAGE value="spring cloud gateway + filterconfig 적용" />
     <MESSAGE value="spring cloud custom + global filter 적용" />
     <MESSAGE value="load balancer 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="load balancer 적용" />
+    <MESSAGE value="user-serivce 생성 및 DB 연동" />
+    <MESSAGE value="user-serivce 생성 및 entity 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="user-serivce 생성 및 entity 생성" />
   </component>
 </project>

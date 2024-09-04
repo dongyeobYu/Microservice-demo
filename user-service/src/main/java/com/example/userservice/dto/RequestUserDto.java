@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 @RequiredArgsConstructor
 @Builder
-public class RequestUser {
+public class RequestUserDto {
 
     @NotBlank(message = "email cannot be null")
     @Size(min = 2, message = "Email not be less than two characters")

@@ -1,10 +1,12 @@
 package com.example.userservice.controller;
 
 import com.example.userservice.Greeting;
-import com.example.userservice.dto.RequestUser;
-import com.example.userservice.dto.UserDto;
+import com.example.userservice.dto.RequestUserDto;
+import com.example.userservice.dto.ResponseUserDto;
 import com.example.userservice.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -22,8 +24,7 @@ public class UserController {
     }
 
     @PostMapping("users")
-    public String createUser(@RequestBody RequestUser requestUser){
-        userService.save(requestUser);
-        return null;
+    public ResponseEntity<ResponseUserDto> createUser(@RequestBody RequestUserDto requestUserDto){
+        return ResponseEntity.status(HttpStatus.CREATED).body(userService.save(requestUserDto));
     }
 }

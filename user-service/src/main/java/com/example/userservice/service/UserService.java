@@ -1,13 +1,13 @@
 package com.example.userservice.service;
 
-import com.example.userservice.dto.RequestUser;
-import com.example.userservice.dto.UserDto;
+import com.example.userservice.dto.RequestUserDto;
+import com.example.userservice.dto.ResponseUserDto;
 import com.example.userservice.entity.UserEntity;
 import com.example.userservice.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Request;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Service
@@ -16,18 +16,23 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    public UserDto save(RequestUser requestUser) {
+    public ResponseUserDto save(RequestUserDto requestUserDto) {
 
         UserEntity userEntity = UserEntity.builder()
                 .userId(UUID.randomUUID().toString())
-                .email(requestUser.getEmail())
+                .email(requestUserDto.getEmail())
                 .encryptedPassword("encrypted_password")
-                .name(requestUser.getName())
+                .name(requestUserDto.getName())
+                .createdAt(LocalDateTime.now())
                 .build();
 
-        userRepository.save(userEntity);
+        UserEntity savedUser = userRepository.save(userEntity);
 
-        return null;
+        return ResponseUserDto.builder()
+                .userId(savedUser.getUserId())
+                .email(savedUser.getEmail())
+                .name(savedUser.getName())
+                .build();
     }
 
 }

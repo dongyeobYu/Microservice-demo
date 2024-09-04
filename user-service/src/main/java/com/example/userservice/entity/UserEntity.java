@@ -3,6 +3,8 @@ package com.example.userservice.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Entity
 @Table(name = "users")
@@ -25,12 +27,16 @@ public class UserEntity {
     @Column(nullable = false)
     private String encryptedPassword;
 
+    @Column(updatable = false)
+    private LocalDateTime createdAt;
+
     @Builder
-    public UserEntity(Long id, String email, String name, String userId, String encryptedPassword) {
+    public UserEntity(Long id, String email, String name, String userId, String encryptedPassword, LocalDateTime createdAt) {
         this.id = id;
         this.email = email;
         this.name = name;
         this.userId = userId;
         this.encryptedPassword = encryptedPassword;
+        this.createdAt = createdAt;
     }
 }
