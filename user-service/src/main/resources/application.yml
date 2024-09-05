@@ -30,3 +30,7 @@ eureka:
 
 greeting:
   message: welcome to the simple e-commerce
+
+logging:
+  level:
+    org.springframework.security: DEBUG

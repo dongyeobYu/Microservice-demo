@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/user-service")
 @RequiredArgsConstructor
 public class UserController {
 
@@ -18,13 +18,14 @@ public class UserController {
 
     private final UserService userService;
 
-    @GetMapping("health_check")
+    @GetMapping("/health_check")
     public String status(){
-        return greeting.getMessage();
+        return greeting.getMessage() + greeting.getEnv().getProperty("local.server.port");
     }
 
-    @PostMapping
+    @PostMapping("/users")
     public ResponseEntity<ResponseUserDto> createUser(@RequestBody RequestUserDto requestUserDto){
         return ResponseEntity.status(HttpStatus.CREATED).body(userService.save(requestUserDto));
     }
+
 }

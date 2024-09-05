@@ -18,7 +18,7 @@ public class WebSecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((request) -> request
-                        .requestMatchers("/users", "/users/**").permitAll()
+                        .requestMatchers("/user-service/**", "/user-service/**", "/error").permitAll()
                         .requestMatchers(PathRequest.toH2Console()).permitAll()
                         .anyRequest()
                         .authenticated())
