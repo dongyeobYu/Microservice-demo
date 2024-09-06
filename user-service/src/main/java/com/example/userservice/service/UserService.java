@@ -9,7 +9,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -39,4 +42,30 @@ public class UserService {
                 .build();
     }
 
+    public List<ResponseUserDto> findByAllUsers() {
+
+        return userRepository.findAll()
+                .stream()
+                .map(
+                        dto -> ResponseUserDto.builder()
+                                .userId(dto.getUserId())
+                                .email(dto.getEmail())
+                                .name(dto.getName())
+                                .createdAt(dto.getCreatedAt())
+                                .build()
+                ).toList();
+    }
+
+    public ResponseUserDto findUserById(String userId) {
+
+        Optional<ResponseUserDto> optionalResponseUserDto = userRepository.findUserByUserId(userId).map(dto -> ResponseUserDto.builder()
+                .userId(dto.getUserId())
+                .email(dto.getEmail())
+                .name(dto.getName())
+                .createdAt(dto.getCreatedAt())
+                .build());
+
+        return optionalResponseUserDto.orElse(null);
+
+    }
 }
