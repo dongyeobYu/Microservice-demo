@@ -12,6 +12,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/catalogs-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/catalogs-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/discoveryservice" />
         <option name="gradleJvm" value="jbr-17" />
         <option name="modules">

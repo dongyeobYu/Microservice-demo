@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../discoveryservice" />
+    <file type="web" url="file://$PROJECT_DIR$/catalogs-service" />
     <file type="web" url="file://$PROJECT_DIR$/discoveryservice" />
     <file type="web" url="file://$PROJECT_DIR$/first-service" />
     <file type="web" url="file://$PROJECT_DIR$/gateway-service" />
