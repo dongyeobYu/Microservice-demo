@@ -12,6 +12,8 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/catalogs-service" />
         <option name="modules">
           <set>
@@ -45,6 +47,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/orders-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/orders-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/second-service" />
         <option name="modules">
           <set>
@@ -66,6 +76,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/../discoveryservice" />
+            <option value="$PROJECT_DIR$/../discoveryservice/Root" />
           </set>
         </option>
       </GradleProjectSettings>
