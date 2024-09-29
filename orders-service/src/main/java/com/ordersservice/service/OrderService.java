@@ -23,10 +23,10 @@ public class OrderService {
     private final OrderRepository orderRepository;
 
     @Transactional
-    public ResponseOrderDto createOrder(RequestOrderDto requestOrderDto) {
+    public ResponseOrderDto createOrder(String userId, RequestOrderDto requestOrderDto) {
         OrderEntity orderEntity = OrderEntity.builder()
                 .qty(requestOrderDto.getQty())
-                .userId(requestOrderDto.getUserId())
+                .userId(userId)
                 .orderId(requestOrderDto.getOrderId())
                 .unitPrice(requestOrderDto.getUnitPrice())
                 .totalPrice(requestOrderDto.getTotalPrice())

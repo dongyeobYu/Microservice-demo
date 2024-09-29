@@ -7,36 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71295c2-158f-4f9e-8878-b9a875b6fdac" name="Changes" comment="catalogs service">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/com.discoveryservice.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/com.user-service.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/ordersservice/OrdersServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/ordersservice/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/ordersservice/dto/request/RequestOrderDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/ordersservice/dto/response/ResponseOrderDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/ordersservice/entity/OrderEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/ordersservice/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/ordersservice/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders-service/src/test/java/com/ordersservice/OrdersServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/catalogs-service.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="c71295c2-158f-4f9e-8878-b9a875b6fdac" name="Changes" comment="order service">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogs-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/catalogs-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogs-service/src/test/java/com/catalogsservice/CatalogsServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogs-service/src/test/java/com/catalogsservice/CatalogsServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discoveryservice/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../discoveryservice/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders-service/src/main/java/com/ordersservice/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/ordersservice/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders-service/src/main/java/com/ordersservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders-service/src/main/java/com/ordersservice/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,65 +131,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.Build catalogs-service.executor": "Run",
-    "Gradle.Build discoveryservice.executor": "Run",
-    "Gradle.Build first-service.executor": "Run",
-    "Gradle.Build gateway-service.executor": "Run",
-    "Gradle.Build second-service.executor": "Run",
-    "Gradle.Build user-service.executor": "Run",
-    "Gradle.CatalogsServiceApplicationTests.CatalogsServiceApplicationTests.executor": "Run",
-    "Gradle.CatalogsServiceApplicationTests.test_001.executor": "Run",
-    "Gradle.discoveryservice [build].executor": "Run",
-    "Gradle.discoveryservice [clean].executor": "Run",
-    "Gradle.first-service [build].executor": "Run",
-    "Gradle.first-service [clean].executor": "Run",
-    "Gradle.gateway-service [buildDependents].executor": "Run",
-    "Gradle.gateway-service [build].executor": "Run",
-    "Gradle.gateway-service [clean].executor": "Run",
-    "Gradle.second-service [build].executor": "Run",
-    "Gradle.second-service [clean].executor": "Run",
-    "Gradle.user-service [build].executor": "Run",
-    "Gradle.user-service [clean].executor": "Run",
-    "JUnit.CatalogsServiceApplicationTests.test_001.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.CatalogsServiceApplication.executor": "Run",
-    "Spring Boot.DiscoveryserviceApplication.executor": "Run",
-    "Spring Boot.FirstServiceApplication.executor": "Run",
-    "Spring Boot.GatewayServiceApplication.executor": "Run",
-    "Spring Boot.SecondServiceApplication.executor": "Run",
-    "Spring Boot.UserServiceApplication (1).executor": "Run",
-    "Spring Boot.UserServiceApplication-2.executor": "Run",
-    "Spring Boot.UserServiceApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "jbr-17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/yudong-yeob/IdeaProjects/Microservice-demo/orders-service/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Build catalogs-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build discoveryservice.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build first-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build gateway-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build second-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build user-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CatalogsServiceApplicationTests.CatalogsServiceApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CatalogsServiceApplicationTests.test_001.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.discoveryservice [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.discoveryservice [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.first-service [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.first-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.gateway-service [buildDependents].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.gateway-service [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.gateway-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.second-service [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.second-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CatalogsServiceApplicationTests.test_001.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CatalogsServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryserviceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FirstServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SecondServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserServiceApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserServiceApplication-2.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;jbr-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yudong-yeob/IdeaProjects/Microservice-demo/orders-service/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.userservice.dto" />
@@ -462,7 +437,8 @@
       <workItem from="1726141242287" duration="941000" />
       <workItem from="1726142191777" duration="1421000" />
       <workItem from="1726143624663" duration="2007000" />
-      <workItem from="1727178529454" duration="2383000" />
+      <workItem from="1727178529454" duration="3659000" />
+      <workItem from="1727589410289" duration="904000" />
     </task>
     <task id="LOCAL-00001" summary="spring cloud gateway">
       <option name="closed" value="true" />
@@ -552,7 +528,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726143880576</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="order service">
+      <option name="closed" value="true" />
+      <created>1727180933133</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1727180933133</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,6 +559,7 @@
     <MESSAGE value="user-service api gateway 적용" />
     <MESSAGE value="user-service get api 2개 추가" />
     <MESSAGE value="catalogs service" />
-    <option name="LAST_COMMIT_MESSAGE" value="catalogs service" />
+    <MESSAGE value="order service" />
+    <option name="LAST_COMMIT_MESSAGE" value="order service" />
   </component>
 </project>
